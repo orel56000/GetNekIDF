@@ -29,7 +29,16 @@ function RefreshTimerText() {
 
 	// Display the countdown in the element with id="countdown"
 	countdownElement.innerHTML =
-		months + " Months<br>" + days + " Days<br>" + hours + " Hours<br>" + minutes + " Minutes<br>" + seconds + " Seconds<br>";
+		months +
+		" Months<br><br>Or if you wanna be more specific...<br><br>" +
+		days +
+		" Days<br>" +
+		hours +
+		" Hours<br>" +
+		minutes +
+		" Minutes<br>" +
+		seconds +
+		" Seconds<br>";
 
 	// If the countdown is finished, display a message
 	if (timeRemaining < 0) {
